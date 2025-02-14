@@ -4,7 +4,7 @@ Bienvenue ! Ce dépôt contient mes présences PreMiD personnalisées pour Disco
 
 **Mes présences :**
 
-*   [papadustream]() - Voici ma première activité Discord réalisée pour un site de streaming français.
+*   [papadustream](https://github.com/mini9dev/preMID-presences/tree/main/Papadustream) - Voici ma première activité Discord réalisée pour un site de streaming français.
 
 **Demandes personnalisées :**
 
