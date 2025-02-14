@@ -28,16 +28,22 @@
 	"iFrameRegExp": ".*",
 	"settings": [
 		{
-			"id": "buttons",
-			"title": "Show Buttons",
-			"icon": "fas fa-compress-arrows-alt",
+			"id": "cover",
+			"title": "Show Cover",
+			"icon": "fad fa-images",
 			"value": true
 		},
 		{
 			"id": "privacy",
-			"title": "Privacy Mode",
-			"icon": "fad fa-user-secret",
-			"value": false
+			"title": "Show Title",
+			"icon": "fas fa-eye",
+			"value": true
+		},
+		{
+			"id": "season_episode",
+			"title": "Show Season & Episode",
+			"icon": "fas fa-list",
+			"value": true
 		},
 		{
 			"id": "timestamps",
@@ -46,10 +52,11 @@
 			"value": true
 		},
 		{
-			"id": "cover",
-			"title": "Show Cover",
-			"icon": "fad fa-images",
+			"id": "buttons",
+			"title": "Show Buttons (function off sry)",
+			"icon": "fas fa-compress-arrows-alt",
 			"value": true
 		}
+
 	]
 }
