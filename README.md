@@ -10,7 +10,3 @@ Bienvenue ! Ce dépôt contient mes présences PreMiD personnalisées pour Disco
 
 Je suis un mini-développeur en apprentissage et j'ai hâte d'apprendre ! Si vous avez une idée de présence PreMiD personnalisée, n'hésitez pas à soumettre une demande. Je ferai de mon mieux pour la créer.
 
-**À propos de moi :**
-
-J'apprends à créer des présences PreMiD pour Discord. Je suis ouvert aux demandes d'activités personnalisées et je progresse dans ce domaine passionnant !
-
