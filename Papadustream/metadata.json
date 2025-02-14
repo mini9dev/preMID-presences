@@ -1,0 +1,55 @@
+{
+	"$schema": "https://schemas.premid.app/metadata/1.13",
+	"apiVersion": 1.1,
+	"author": {
+		"name": "swg",
+		"id": "675364815870492693"
+	},
+	"contributors": [],
+	"service": "Papadustream",
+	"description": {
+		"en": "Watch movies and series in streaming for free.",
+		"fr": "Regardez des films et séries en streaming gratuitement."
+	},
+	"url": "papadustream.day",
+	"version": "1.0.0",
+	"logo": "https://papasdustream.com/wp-content/uploads/2024/10/cropped-logo-papadustream.jpg", 
+	"thumbnail": "https://verifsites.com/wp-content/uploads/2024/03/1711618867_Capture%20d'%C3%A9cran%202024-03-28%20104009.png",
+	"color": "#7a0b80",
+	"category": "videos",
+	"tags": [
+		"streaming",
+		"movies",
+		"series",
+		"vf",
+		"vostfr"
+	],
+	"iframe": true,
+	"iFrameRegExp": ".*",
+	"settings": [
+		{
+			"id": "buttons",
+			"title": "Show Buttons",
+			"icon": "fas fa-compress-arrows-alt",
+			"value": true
+		},
+		{
+			"id": "privacy",
+			"title": "Privacy Mode",
+			"icon": "fad fa-user-secret",
+			"value": false
+		},
+		{
+			"id": "timestamps",
+			"title": "Show Timestamps",
+			"icon": "fad fa-stopwatch",
+			"value": true
+		},
+		{
+			"id": "cover",
+			"title": "Show Cover",
+			"icon": "fad fa-images",
+			"value": true
+		}
+	]
+}
