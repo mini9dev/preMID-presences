@@ -1,6 +1,6 @@
 // 🛠️ Création d'une nouvelle instance de Presence avec l'ID client Discord
 const presence = new Presence({
-    clientId: "1016797607370162256"
+    clientId: "1334233492955070506"
 });
 
 // ⚙️ Initialisation des données vidéo
