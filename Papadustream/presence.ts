@@ -10,6 +10,9 @@ let videoData: { currentTime: number; duration: number; paused: boolean } = {
     paused: true
 };
 
+// 📦 Cache pour éviter de recharger les mêmes images plusieurs fois
+const imageCache: { [key: string]: string } = {};
+
 // 👂 Écoute des données envoyées par l'iFrame
 presence.on("iFrameData", (data: { currentTime: number; duration: number; paused: boolean }) => {  
     console.log("📌 Données reçues :", data);
@@ -23,14 +26,24 @@ async function getValidImageUrl(imageUrl: string | null): Promise<string> {
     }
     if (imageUrl.startsWith("https")) return imageUrl;
 
-    // ➕ Ajout du domaine si l'URL est relative
+    if (imageCache[imageUrl]) {
+        console.log("📌 Image chargée depuis le cache:", imageUrl);
+        return imageCache[imageUrl];
+    }
+
     const fullUrl = `https://papadustream.day${imageUrl}`;
     try {
+        console.time("Fetch Image");
         const response = await fetch(fullUrl);
+        console.timeEnd("Fetch Image");
+
         const blob = await response.blob();
         return new Promise((resolve, reject) => {
             const reader = new FileReader();
-            reader.onloadend = () => resolve(reader.result as string);
+            reader.onloadend = () => {
+                imageCache[imageUrl] = reader.result as string; // Ajout au cache
+                resolve(reader.result as string);
+            };
             reader.onerror = reject;
             reader.readAsDataURL(blob);
         });
@@ -55,6 +68,8 @@ function getPageType(): string {
 
 // 🧩 Fonction principale pour mettre à jour la présence Discord
 async function updatePresence() {
+    console.time("Update Presence");
+
     // 🔄 Récupération des paramètres de l'extension PreMiD
     const showTitle = await presence.getSetting<boolean>("privacy");
     const showTimestamps = await presence.getSetting<boolean>("timestamps");
@@ -114,6 +129,7 @@ async function updatePresence() {
 
     // ✅ Mise à jour de la présence Discord
     presence.setActivity(presenceData);
+    console.timeEnd("Update Presence");
 }
 
 // 🔄 Exécuter la mise à jour des données à chaque changement
