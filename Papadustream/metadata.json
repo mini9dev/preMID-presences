@@ -53,7 +53,7 @@
         },
         {
             "id": "buttons",
-            "title": "Show Buttons (function off sry)",
+            "title": "Show Buttons",
             "icon": "fas fa-compress-arrows-alt",
             "value": true
         }
