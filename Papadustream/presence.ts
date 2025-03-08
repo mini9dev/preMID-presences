@@ -75,6 +75,7 @@ async function updatePresence() {
     const showTimestamps = await presence.getSetting<boolean>("timestamps");
     const showCover = await presence.getSetting<boolean>("cover");
     const showSeasonEpisode = await presence.getSetting<boolean>("season_episode");
+    const showButtons = await presence.getSetting<boolean>("buttons"); // ✅ Récupération du réglage "Show Buttons"
 
     // 🔍 Récupération du titre
     const titleElement = document.querySelector("h1");
@@ -124,7 +125,9 @@ async function updatePresence() {
         smallImageText: smallImageText,
         largeImageText: "papadustream.day",
         startTimestamp: showTimestamps && !isInMenu && !videoData.paused ? startTimestamp : undefined,
-        endTimestamp: showTimestamps && !isInMenu && !videoData.paused ? endTimestamp : undefined
+        endTimestamp: showTimestamps && !isInMenu && !videoData.paused ? endTimestamp : undefined,
+        // 📌 Ajout du bouton seulement si "Show Buttons" est activé
+        buttons: showButtons && !isInMenu ? [{ label: "Regarder sur PapaDuStream", url: window.location.href }] : undefined
     };
 
     // ✅ Mise à jour de la présence Discord
