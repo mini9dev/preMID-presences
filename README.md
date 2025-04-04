@@ -6,6 +6,8 @@ Bienvenue ! Ce dépôt contient mes présences PreMiD personnalisées pour Disco
 
 *   [papadustream](https://github.com/mini9dev/preMID-presences/tree/main/Papadustream) - Voici ma première activité Discord réalisée pour un site de streaming français.
 
+*   [jeuxcracks](https://github.com/mini9dev/preMID-presences/tree/main/jeuxcracks) - activité Discord pour un site de cracks français (en cours de création).
+
 **Demandes personnalisées :**
 
 Je suis un mini-développeur en apprentissage et j'ai hâte d'apprendre ! Si vous avez une idée de présence PreMiD personnalisée, n'hésitez pas à soumettre une demande. Je ferai de mon mieux pour la créer.
