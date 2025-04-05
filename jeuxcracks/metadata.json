@@ -10,7 +10,7 @@
 		"en": "JeuxCracks"
 	},
 	"description": {
-		"en": "more than 10,000 free online games"
+		"en": "Explore and download thousands of free PC games with ease on JeuxCracks."
 	},
 	"url": "jeuxcracks.fr",
 	"version": "1.0.0",
@@ -19,21 +19,19 @@
 	"color": "#0a1ed1",
 	"category": "games",
 	"tags": [
-		"game"
+		"free PC games",
+		"multiplayer",
+		"offline games",
+		"catalogue"
 	],
 	"presence": {
 		"name": {
 			"en": "JeuxCracks"
 		},
 		"applicationId": "1357293396632404020",
-		"domains": ["jeuxcracks.fr"],
-		"script": "presence.js",
-		"config": {
-			"buttons": {
-				"type": "boolean",
-				"default": true,
-				"description": "Afficher le bouton 'Télécharger ce jeu'"
-			}
-		}
+		"domains": [
+			"jeuxcracks.fr"
+		],
+		"script": "presence.js"
 	}
 }
