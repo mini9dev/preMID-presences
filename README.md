@@ -12,5 +12,5 @@ Bienvenue ! Ce dépôt contient mes présences PreMiD personnalisées pour Disco
 
 **Demandes personnalisées :**
 
-Je suis un mini-développeur en apprentissage et j'ai hâte d'apprendre ! Si vous avez une idée de présence PreMiD personnalisée, n'hésitez pas à soumettre une demande. Je ferai de mon mieux pour la créer.
+Si vous avez une idée de présence PreMiD personnalisée, n'hésitez pas à soumettre une demande. Je ferai de mon mieux pour la créer.
 
